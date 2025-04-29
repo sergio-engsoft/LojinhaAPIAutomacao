@@ -1,4 +1,4 @@
-# Lojinha API Automação de Testes
+# Lojinha API Automação de Testes 
 
 Este repositório contém uma automação de testes para a API da Lojinha, um sistema fictício utilizado para demonstrar habilidades em testes de APIs. O projeto foi desenvolvido com o objetivo de demonstrar a proficiência no uso de frameworks de teste,
 automação de API e integração com ferramentas de CI/CD.
