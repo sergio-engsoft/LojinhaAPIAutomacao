@@ -54,12 +54,12 @@ mvn clean test
 CI/CD com GitHub Actions
 Este repositório está configurado para executar os testes automaticamente sempre que houver uma atualização no código. O fluxo de CI/CD foi configurado no arquivo .github/workflows/ci.yml, utilizando o GitHub Actions.
 
-Links Úteis
-Swagger UI da API
+## Links Úteis
 
-Base URL da API da Lojinha
-
-Meu LinkedIn
+- **Swagger Editor da API Lojinha:** [Swagger Editor](https://editor.swagger.io/)
+- **Base URL da API Lojinha:** `165.227.93.41/lojinha`
+- **Repositório no GitHub:** [Lojinha API Automação](https://github.com/sergio-engsoft/LojinhaAPIAutomacao)
+- **Perfil do LinkedIn:** [Sérgio dos Santos Soares](https://linkedin.com/in/sergio-dos-santos-soares)
 
 Licença
 Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
