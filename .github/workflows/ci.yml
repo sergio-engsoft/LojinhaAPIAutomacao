@@ -16,11 +16,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up AdoptOpenJDK (Adoptium) 17
+    - name: Set up JDK 23 (Adoptium)
       uses: actions/setup-java@v2
       with:
-        java-version: '17'
-        distribution: 'adoptopenjdk'
-
+        java-version: '23'
+        distribution: 'temurin' 
+        
     - name: Run Maven tests
       run: mvn clean test
