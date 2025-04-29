@@ -1,21 +1,21 @@
 package datafactory;
-
 import pojo.ComponentePojo;
 import pojo.ProdutoPojo;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProdutoDataFactory {
-    public static ProdutoPojo criarProdutoComumComOValorIgualA(double valor){
+
+    public static ProdutoPojo criarProdutoComum() {
         ProdutoPojo produto = new ProdutoPojo();
-        produto.setProdutoNome("PS4");
-        produto.setProdutoValor(valor);
+        produto.setProdutoNome("Produto teste");
+        produto.setProdutoValor(100.99);
+
         List<String> cores = new ArrayList<>();
         cores.add("Preto");
         cores.add("Branco");
-
         produto.setProdutoCores(cores);
+
         produto.setProdutoUrlMock("");
 
         List<ComponentePojo> componentes = new ArrayList<>();

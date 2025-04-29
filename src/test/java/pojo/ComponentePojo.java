@@ -2,7 +2,7 @@ package pojo;
 
 public class ComponentePojo {
     private String componenteNome;
-    private int componenteQuantidade;
+    private Integer componenteQuantidade;
 
     public String getComponenteNome() {
         return componenteNome;
@@ -12,11 +12,11 @@ public class ComponentePojo {
         this.componenteNome = componenteNome;
     }
 
-    public int getComponenteQuantidade() {
+    public Integer getComponenteQuantidade() {
         return componenteQuantidade;
     }
 
-    public void setComponenteQuantidade(int componenteQuantidade) {
+    public void setComponenteQuantidade(Integer componenteQuantidade) {
         this.componenteQuantidade = componenteQuantidade;
     }
 }
