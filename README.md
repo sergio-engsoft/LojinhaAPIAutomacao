@@ -58,6 +58,5 @@ O projeto conta com uma pipeline configurada no GitHub Actions que executa os te
 ## Links Úteis 🔗
 
 - [Editor Swagger](https://editor.swagger.io/)
-- [Documentação da API da Lojinha](http://165.227.93.41/lojinha)
 - [Repositório no GitHub](https://github.com/sergio-engsoft/LojinhaAPIAutomacao)
 - [Meu LinkedIn](https://linkedin.com/in/sergio-dos-santos-soares)
