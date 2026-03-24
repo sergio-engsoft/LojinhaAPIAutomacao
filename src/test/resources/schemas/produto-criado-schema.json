@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Produto Criado Response",
+  "type": "object",
+  "required": ["message", "data"],
+  "properties": {
+    "message": { "type": "string" },
+    "error":   { "type": "string" },
+    "data": {
+      "type": "object",
+      "required": ["produtoId", "produtoNome", "produtoValor", "produtoCores"],
+      "properties": {
+        "produtoId": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "produtoNome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "produtoValor": {
+          "type": "number",
+          "minimum": 0
+        },
+        "produtoCores": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "produtoUrlMock": { "type": "string" },
+        "componente": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["componenteId", "componenteNome", "componenteQuantidade"],
+            "properties": {
+              "componenteId":         { "type": "integer" },
+              "componenteNome":       { "type": "string"  },
+              "componenteQuantidade": { "type": "integer", "minimum": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

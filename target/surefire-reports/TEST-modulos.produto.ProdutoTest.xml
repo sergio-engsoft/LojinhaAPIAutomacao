@@ -1,0 +1,2070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="modulos.produto.ProdutoTest" time="10.898" tests="21" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Projects\LojinhaRefatorado\target\test-classes;C:\Projects\LojinhaRefatorado\target\classes;C:\Users\sergi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\sergi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sergi\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\sergi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sergi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\sergi\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\sergi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\sergi\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\sergi\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\sergi\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\sergi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sergi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sergi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sergi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sergi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sergi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sergi\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\sergi\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\sergi\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\sergi\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\sergi\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\sergi\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\sergi\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\sergi\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\sergi\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\sergi\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\sergi\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sergi\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\sergi\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\sergi\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sergi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sergi\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\sergi\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\sergi\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\sergi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\sergi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\sergi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-junit5\2.27.0\allure-junit5-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-junit-platform\2.27.0\allure-junit-platform-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\sergi\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\sergi\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\sergi\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\sergi\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\sergi\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;C:\Users\sergi\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\sergi\AppData\Local\Temp\surefire7897157223405633827\surefirebooter-20260324182135631_3.jar C:\Users\sergi\AppData\Local\Temp\surefire7897157223405633827 2026-03-24T18-21-35_447-jvmRun1 surefire-20260324182135631_1tmp surefire_0-20260324182135631_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Projects\LojinhaRefatorado\target\test-classes;C:\Projects\LojinhaRefatorado\target\classes;C:\Users\sergi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\sergi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sergi\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\sergi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sergi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\sergi\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\sergi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\sergi\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\sergi\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\sergi\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\sergi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sergi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sergi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sergi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sergi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sergi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sergi\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\sergi\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\sergi\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\sergi\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\sergi\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\sergi\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\sergi\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\sergi\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\sergi\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\sergi\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\sergi\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\sergi\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sergi\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\sergi\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\sergi\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sergi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sergi\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\sergi\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\sergi\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\sergi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\sergi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\sergi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-junit5\2.27.0\allure-junit5-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-junit-platform\2.27.0\allure-junit-platform-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\sergi\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-rest-assured\2.27.0\allure-rest-assured-2.27.0.jar;C:\Users\sergi\.m2\repository\io\qameta\allure\allure-attachments\2.27.0\allure-attachments-2.27.0.jar;C:\Users\sergi\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\sergi\.m2\repository\org\aeonbits\owner\owner\1.0.12\owner-1.0.12.jar;C:\Users\sergi\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\sergi\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;C:\Users\sergi\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;"/>
+    <property name="allure.results.directory" value="C:\Projects\LojinhaRefatorado\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sergi"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Projects\LojinhaRefatorado"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sergi\AppData\Local\Temp\surefire7897157223405633827\surefirebooter-20260324182135631_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
+    <property name="user.name" value="sergi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sergi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sergi\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="C:\Projects\LojinhaRefatorado"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\sergi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Maven\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-23\bin;C:\Program Files\Java\jdk-23\bin;C:\Program Files\nodejs\;C:\Users\sergi\AppData\Local\Microsoft\WindowsApps;C:\Users\sergi\AppData\Roaming\npm;C:\Users\sergi\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="atualizarProdutoRetorna200" classname="modulos.produto.ProdutoTest" time="0.377">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "usuarioLogin": "admin",
+    "usuarioSenha": "admin",
+    "usuarioNome": "Administrador"
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "usuarioLogin": "admin",
+    "usuarioSenha": "admin",
+    "usuarioNome": "Administrador"
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:53 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 240
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY"
+    },
+    "message": "Sucesso ao realizar o login",
+    "error": ""
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:53 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 240
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY"
+    },
+    "message": "Sucesso ao realizar o login",
+    "error": ""
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Tue, 24 Mar 2026 21:21:53 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032802,
+        "produtoNome": "Produto Teste Automacao",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto adicionado com sucesso",
+    "error": ""
+}
+HTTP/1.1 201 Created
+Date: Tue, 24 Mar 2026 21:21:53 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032802,
+        "produtoNome": "Produto Teste Automacao",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto adicionado com sucesso",
+    "error": ""
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Atualizado",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Atualizado",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:54 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 206
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032802,
+        "produtoNome": "Produto Atualizado",
+        "produtoValor": 100.99,
+        "produtoCores": "Preto,Branco",
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto alterado com sucesso",
+    "error": ""
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:54 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 206
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032802,
+        "produtoNome": "Produto Atualizado",
+        "produtoValor": 100.99,
+        "produtoCores": "Preto,Branco",
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto alterado com sucesso",
+    "error": ""
+}
+]]></system-out>
+    <system-err><![CDATA[[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+[main] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+]]></system-err>
+  </testcase>
+  <testcase name="atualizarProdutoComValorAcimaDoMaximoRetorna422" classname="modulos.produto.ProdutoTest" time="0.32">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 7001.0,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 7001.0,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Tue, 24 Mar 2026 21:21:54 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 92
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Tue, 24 Mar 2026 21:21:54 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 92
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="atualizarProdutoInexistenteRetorna404" classname="modulos.produto.ProdutoTest" time="0.355">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/9999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/9999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 404 Not Found
+Date: Tue, 24 Mar 2026 21:21:54 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 404 Not Found
+Date: Tue, 24 Mar 2026 21:21:54 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="atualizarProdutoSemTokenRetorna401" classname="modulos.produto.ProdutoTest" time="0.316">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:55 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:55 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="buscarProdutoInexistenteRetorna404" classname="modulos.produto.ProdutoTest" time="0.315">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/9999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/9999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Tue, 24 Mar 2026 21:21:55 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 404 Not Found
+Date: Tue, 24 Mar 2026 21:21:55 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="buscarProdutoPorIdRetorna200" classname="modulos.produto.ProdutoTest" time="0.349">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:55 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 209
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032802,
+        "produtoNome": "Produto Atualizado",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Detalhando dados do produto",
+    "error": ""
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:55 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 209
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032802,
+        "produtoNome": "Produto Atualizado",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Detalhando dados do produto",
+    "error": ""
+}
+]]></system-out>
+  </testcase>
+  <testcase name="buscarProdutoPorIdSemTokenRetorna401" classname="modulos.produto.ProdutoTest" time="0.339">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoSemTokenRetorna401" classname="modulos.produto.ProdutoTest" time="0.321">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoValidoRetorna201" classname="modulos.produto.ProdutoTest" time="0.773">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Tue, 24 Mar 2026 21:21:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032803,
+        "produtoNome": "Produto Teste Automacao",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto adicionado com sucesso",
+    "error": ""
+}
+HTTP/1.1 201 Created
+Date: Tue, 24 Mar 2026 21:21:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032803,
+        "produtoNome": "Produto Teste Automacao",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto adicionado com sucesso",
+    "error": ""
+}
+Request method:	DELETE
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032803
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032803
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 No Content
+Date: Tue, 24 Mar 2026 21:21:57 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+HTTP/1.1 204 No Content
+Date: Tue, 24 Mar 2026 21:21:57 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+]]></system-out>
+  </testcase>
+  <testcase name="listarProdutosRetorna200" classname="modulos.produto.ProdutoTest" time="0.524">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:57 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 226
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "produtoId": 1032802,
+            "produtoNome": "Produto Atualizado",
+            "produtoValor": 100.99,
+            "produtoCores": [
+                "Preto",
+                "Branco"
+            ],
+            "produtoUrlMock": "",
+            "componentes": [
+                
+            ]
+        }
+    ],
+    "message": "Listagem de produtos realizada com sucesso",
+    "error": ""
+}
+HTTP/1.1 200 OK
+Date: Tue, 24 Mar 2026 21:21:57 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 226
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "produtoId": 1032802,
+            "produtoNome": "Produto Atualizado",
+            "produtoValor": 100.99,
+            "produtoCores": [
+                "Preto",
+                "Branco"
+            ],
+            "produtoUrlMock": "",
+            "componentes": [
+                
+            ]
+        }
+    ],
+    "message": "Listagem de produtos realizada com sucesso",
+    "error": ""
+}
+]]></system-out>
+  </testcase>
+  <testcase name="listarProdutosSemTokenRetorna401" classname="modulos.produto.ProdutoTest" time="0.349">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="removerProdutoRetorna204" classname="modulos.produto.ProdutoTest" time="0.654">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Date: Tue, 24 Mar 2026 21:21:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032804,
+        "produtoNome": "Produto Teste Automacao",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto adicionado com sucesso",
+    "error": ""
+}
+HTTP/1.1 201 Created
+Date: Tue, 24 Mar 2026 21:21:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 217
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": {
+        "produtoId": 1032804,
+        "produtoNome": "Produto Teste Automacao",
+        "produtoValor": 100.99,
+        "produtoCores": [
+            "Preto",
+            "Branco"
+        ],
+        "produtoUrlMock": "",
+        "componentes": [
+            
+        ]
+    },
+    "message": "Produto adicionado com sucesso",
+    "error": ""
+}
+Request method:	DELETE
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032804
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032804
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 No Content
+Date: Tue, 24 Mar 2026 21:21:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+HTTP/1.1 204 No Content
+Date: Tue, 24 Mar 2026 21:21:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+]]></system-out>
+  </testcase>
+  <testcase name="removerProdutoSemTokenRetorna401" classname="modulos.produto.ProdutoTest" time="0.35">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:59 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+HTTP/1.1 401 Unauthorized
+Date: Tue, 24 Mar 2026 21:21:59 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+]]></system-out>
+  </testcase>
+  <testcase name="atualizarProdutoComCampoAusenteRetorna400(String, ProdutoPojo, String)[1]" classname="modulos.produto.ProdutoTest" time="0.369">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:21:59 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:21:59 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="atualizarProdutoComCampoAusenteRetorna400(String, ProdutoPojo, String)[2]" classname="modulos.produto.ProdutoTest" time="0.36">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:21:59 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:21:59 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="atualizarProdutoComCampoAusenteRetorna400(String, ProdutoPojo, String)[3]" classname="modulos.produto.ProdutoTest" time="0.367">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	PUT
+Request URI:	http://165.227.93.41/lojinha/v2/produtos/1032802
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:00 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:00 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoComCampoAusenteRetorna400(String, ProdutoPojo, String)[1]" classname="modulos.produto.ProdutoTest" time="1.356">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoValor": 100.99,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:01 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:01 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoComCampoAusenteRetorna400(String, ProdutoPojo, String)[2]" classname="modulos.produto.ProdutoTest" time="0.382">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:01 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:01 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoComCampoAusenteRetorna400(String, ProdutoPojo, String)[3]" classname="modulos.produto.ProdutoTest" time="0.36">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 100.99,
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:02 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+HTTP/1.1 400 Bad Request
+Date: Tue, 24 Mar 2026 21:22:02 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 109
+Connection: close
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "produtoNome, produtoValor e produtoCores são campos obrigatórios"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoComValorForaDosLimitesRetorna422(String, ProdutoPojo, String)[1]" classname="modulos.produto.ProdutoTest" time="0.34">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 0.0,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 0.0,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Tue, 24 Mar 2026 21:22:02 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 92
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Tue, 24 Mar 2026 21:22:02 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 92
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="criarProdutoComValorForaDosLimitesRetorna422(String, ProdutoPojo, String)[2]" classname="modulos.produto.ProdutoTest" time="0.357">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 7001.0,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	http://165.227.93.41/lojinha/v2/produtos
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiIxMjY1IiwidXN1YXJpb2xvZ2luIjoiYWRtaW4iLCJ1c3Vhcmlvbm9tZSI6ImFkbWluIn0.1yk-F1vPuzTsXzx1HVOK8SfHRaGfNw9PQUFmA6uUaGY
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "produtoNome": "Produto Teste Automacao",
+    "produtoValor": 7001.0,
+    "produtoCores": [
+        "Preto",
+        "Branco"
+    ],
+    "produtoUrlMock": "",
+    "componente": [
+        {
+            "componenteNome": "Controle",
+            "componenteQuantidade": 2
+        },
+        {
+            "componenteNome": "Cabo De Energia",
+            "componenteQuantidade": 1
+        }
+    ]
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Tue, 24 Mar 2026 21:22:03 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 92
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"
+}
+HTTP/1.1 422 Unprocessable Entity
+Date: Tue, 24 Mar 2026 21:22:03 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 92
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json
+
+{
+    "data": [
+        
+    ],
+    "message": "",
+    "error": "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
