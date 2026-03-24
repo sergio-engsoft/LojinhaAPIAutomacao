@@ -1,9 +1,0 @@
-config\ConfiguracaoPropriedades.class
-modulos\usuario\UsuarioTest.class
-datafactory\ComponenteDataFactory.class
-datafactory\UsuarioDataFactory.class
-datafactory\ProdutoDataFactory.class
-base\BaseTest.class
-config\ConfiguracaoManager.class
-modulos\produto\ProdutoTest.class
-modulos\componente\ComponenteTest.class

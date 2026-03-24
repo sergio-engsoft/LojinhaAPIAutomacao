@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: modulos.componente.ComponenteTest
--------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.57 s -- in modulos.componente.ComponenteTest
